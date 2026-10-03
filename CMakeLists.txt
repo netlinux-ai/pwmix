@@ -15,3 +15,8 @@ add_executable(pwconsole
   src/main.cpp src/pw.cpp src/desk.cpp src/ui.cpp)
 target_link_libraries(pwconsole PRIVATE PkgConfig::DEPS pthread)
 target_compile_options(pwconsole PRIVATE -Wall -Wextra -Wno-unused-parameter -Wno-missing-field-initializers)
+
+include(GNUInstallDirs)
+install(TARGETS pwconsole RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(FILES packaging/pwconsole.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
+install(FILES packaging/pwconsole.1 DESTINATION ${CMAKE_INSTALL_MANDIR}/man1)

@@ -1,0 +1,24 @@
+.TH PWCONSOLE 1 "October 2026" "pwconsole 0.1.0" "User Commands"
+.SH NAME
+pwconsole \- mixer-style console for PipeWire
+.SH SYNOPSIS
+.B pwconsole
+[\fB\-\-png\fR \fIFILE\fR [\fB\-\-size\fR \fIWIDTH HEIGHT\fR]]
+.SH DESCRIPTION
+Shows PipeWire applications, devices and the links between them as
+columns of mixer strips with volume and mute controls. Application
+streams are matched to the desktop window that owns them.
+.SH OPTIONS
+.TP
+.BI \-\-png " FILE"
+Render one frame of the current graph to a PNG file and exit.
+.TP
+.BI \-\-size " WIDTH HEIGHT"
+Window or image size in pixels.
+.SH CONTROLS
+Mouse wheel over a strip changes its volume. Clicking the M button
+toggles mute. Up, Down, Page Up and Page Down scroll. Q or Escape quits.
+.SH ENVIRONMENT
+Requires an X11 session (DISPLAY) and a running PipeWire daemon.
+.SH AUTHOR
+NetLinux <graham@netlinux.co.uk>

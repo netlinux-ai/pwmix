@@ -1,0 +1,18 @@
+Source: pwconsole
+Section: sound
+Priority: optional
+Maintainer: Graham <graham@netlinux.co.uk>
+Build-Depends: debhelper-compat (= 13), cmake, pkg-config,
+ libpipewire-0.3-dev, libcairo2-dev, libpango1.0-dev, libx11-dev,
+ libsystemd-dev
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+Homepage: https://github.com/netlinux-ai/pwconsole
+
+Package: pwconsole
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, pipewire
+Description: mixer-style console for PipeWire
+ Shows PipeWire applications, devices and the links between them as
+ columns of mixer strips with volume and mute controls, and matches
+ application streams to the desktop window that owns them.

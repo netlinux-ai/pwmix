@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PW Console
+GenericName=PipeWire Mixer Console
+Comment=Mixer-style view of PipeWire apps, devices and connections
+Exec=pwconsole
+Icon=multimedia-volume-control
+Terminal=false
+Categories=AudioVideo;Audio;Mixer;
