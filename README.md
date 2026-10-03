@@ -1,6 +1,6 @@
 # pwmix
 
-A mixer-style console for PipeWire. One C++20 binary, drawn with Cairo and
+A mixer-style view for PipeWire. One C++20 binary, drawn with Cairo and
 Pango on a plain X11 window (no Qt or GTK), talking to PipeWire directly.
 
 - Apps, devices and links shown as strips in Sources / Middle / Sinks columns

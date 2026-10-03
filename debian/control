@@ -12,7 +12,7 @@ Homepage: https://github.com/netlinux-ai/pwmix
 Package: pwmix
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, pipewire
-Description: mixer-style console for PipeWire
+Description: mixer-style view for PipeWire
  Shows PipeWire applications, devices and the links between them as
  columns of mixer strips with volume and mute controls, and matches
  application streams to the desktop window that owns them.
