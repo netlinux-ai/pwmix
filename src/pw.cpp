@@ -236,7 +236,7 @@ PwClient::~PwClient()
 bool PwClient::start()
 {
 	pw_init(nullptr, nullptr);
-	d->loop = pw_thread_loop_new("pwconsole-pw", nullptr);
+	d->loop = pw_thread_loop_new("pwmix-pw", nullptr);
 	if (!d->loop) return false;
 	d->ctx = pw_context_new(pw_thread_loop_get_loop(d->loop), nullptr, 0);
 	if (!d->ctx) return false;

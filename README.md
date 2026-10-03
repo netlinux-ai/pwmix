@@ -1,4 +1,4 @@
-# pwconsole
+# pwmix
 
 A mixer-style console for PipeWire. One C++20 binary, drawn with Cairo and
 Pango on a plain X11 window (no Qt or GTK), talking to PipeWire directly.
@@ -14,7 +14,7 @@ prototype.
 ## Build
 
     cmake -S . -B build && cmake --build build
-    ./build/pwconsole
+    ./build/pwmix
 
 Build dependencies: cmake, pkg-config, libpipewire-0.3-dev, libcairo2-dev,
 libpango1.0-dev, libx11-dev, libsystemd-dev.
@@ -23,7 +23,7 @@ libpango1.0-dev, libx11-dev, libsystemd-dev.
 
     ./packaging/build-deb.sh
 
-builds `pwconsole_<version>_amd64.deb` into `scratch/deb/`.
+builds `pwmix_<version>_amd64.deb` into `scratch/deb/`.
 
 ## License
 

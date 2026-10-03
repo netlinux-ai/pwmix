@@ -1,4 +1,4 @@
-pwconsole (0.1.0-1netlinux1~resolute1) resolute; urgency=medium
+pwmix (0.1.0-1netlinux1~resolute1) resolute; urgency=medium
 
   * Initial release: PipeWire graph view with per-node volume and mute and
     desktop window identification for application streams.

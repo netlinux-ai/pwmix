@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: pwconsole
-Source: https://github.com/netlinux-ai/pwconsole
+Upstream-Name: pwmix
+Source: https://github.com/netlinux-ai/pwmix
 
 Files: *
 Copyright: 2026 Graham, NetLinux

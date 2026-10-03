@@ -1,4 +1,4 @@
-Source: pwconsole
+Source: pwmix
 Section: sound
 Priority: optional
 Maintainer: Graham <graham@netlinux.co.uk>
@@ -7,9 +7,9 @@ Build-Depends: debhelper-compat (= 13), cmake, pkg-config,
  libsystemd-dev
 Standards-Version: 4.7.0
 Rules-Requires-Root: no
-Homepage: https://github.com/netlinux-ai/pwconsole
+Homepage: https://github.com/netlinux-ai/pwmix
 
-Package: pwconsole
+Package: pwmix
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, pipewire
 Description: mixer-style console for PipeWire
