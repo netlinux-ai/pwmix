@@ -72,8 +72,8 @@ int main(int argc, char **argv)
 	const int scr = DefaultScreen(dpy);
 	Window win = XCreateSimpleWindow(dpy, RootWindow(dpy, scr), 0, 0, W, H, 0, 0,
 	                                 BlackPixel(dpy, scr));
-	XStoreName(dpy, win, "pwmix");
-	XClassHint ch = {(char *)"pwmix", (char *)"Pwmix"};
+	XStoreName(dpy, win, "pwconsole");
+	XClassHint ch = {(char *)"pwconsole", (char *)"Pwconsole"};
 	XSetClassHint(dpy, win, &ch);
 	XSelectInput(dpy, win, ExposureMask | StructureNotifyMask | KeyPressMask | ButtonPressMask);
 	Atom wm_delete = XInternAtom(dpy, "WM_DELETE_WINDOW", False);
